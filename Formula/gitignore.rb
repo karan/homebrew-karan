@@ -1,7 +1,7 @@
 class Gitignore < Formula
   homepage "https://github.com/karan/joe"
-  url "https://github.com/karan/joe/archive/0.0.5.tar.gz"
-  sha1 "2866ac1b17ca8108e52231d80a1267a942eb5cf2"
+  url "https://pypi.python.org/packages/source/j/joe/joe-0.0.5.tar.gz"
+  sha1 "60d65bcaf809fda3bb54d21892e7855c0fe6ac8e"
 
   depends_on :python if MacOS.version <= :snow_leopard
 
