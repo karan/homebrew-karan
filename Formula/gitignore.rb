@@ -5,6 +5,8 @@ class Gitignore < Formula
 
   depends_on :python if MacOS.version <= :snow_leopard
 
+  conflicts_with "joe"
+
   resource "docopt" do
     url "https://github.com/docopt/docopt/archive/0.6.1.tar.gz"
     sha1 "2228a1bc58665664550a4552fb53906704918866"
