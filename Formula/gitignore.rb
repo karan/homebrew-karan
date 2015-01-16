@@ -29,6 +29,6 @@ class Gitignore < Formula
   end
 
   test do
-    system "#{bin}/joe", "--version"
+    assert_match "__pycache__", `#{bin}/joe python`
   end
 end
