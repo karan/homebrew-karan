@@ -1,4 +1,4 @@
-class Gitignore < Formula
+class JoePython < Formula
   homepage "https://github.com/karan/joe"
   url "https://pypi.python.org/packages/source/j/joe/joe-0.0.5.tar.gz"
   sha1 "60d65bcaf809fda3bb54d21892e7855c0fe6ac8e"
