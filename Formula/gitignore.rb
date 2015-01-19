@@ -27,6 +27,6 @@ class Gitignore < Formula
   end
 
   test do
-    system "#{bin}/joe", "--version"
+    system "#{bin}/joe", "ls"
   end
 end
