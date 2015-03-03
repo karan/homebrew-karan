@@ -1,4 +1,4 @@
-# homebrew-karan
+# Karan's Homebrew Formula(s|e)
 
 This is a repo for my packages that don't fit the requirements to be in the centralized homebrew repo.
 
