@@ -10,11 +10,16 @@ class Gitignore < Formula
     sha1 "2228a1bc58665664550a4552fb53906704918866"
   end
 
+  resource "GitPython" do
+    url "https://pypi.python.org/packages/source/G/GitPython/GitPython-1.0.2.tar.gz#md5=d92d96a8da0fc77cf141d3e16084e094"
+    sha1 "f6ff3a7dce04fac9028845ad5f0d0e1ee773d6fd"
+  end
+
   def install
     ENV["PYTHONPATH"] = libexec/"vendor/lib/python2.7/site-packages"
     ENV.prepend_create_path "PYTHONPATH", libexec/"lib/python2.7/site-packages"
 
-    %w[docopt].each do |r|
+    %w[docopt,GitPython].each do |r|
       resource(r).stage do
         system "python", *Language::Python.setup_install_args(libexec/"vendor")
       end
