@@ -1,18 +1,18 @@
 class Gitignore < Formula
   homepage "https://github.com/karan/joe"
   url "https://pypi.python.org/packages/source/j/joe/joe-0.0.7.tar.gz"
-  sha1 "c14d59f5ab10f17d7a4b1777e3e96e203595e65c"
+  sha256 "51396a06ee83694f48a16bb4e78f4bd3ee27a30809b19f7ede4881b7366539c7"
 
   depends_on :python if MacOS.version <= :snow_leopard
 
   resource "docopt" do
     url "https://github.com/docopt/docopt/archive/0.6.1.tar.gz"
-    sha1 "2228a1bc58665664550a4552fb53906704918866"
+    sha256 "e5e9fc58fc25acd8837f608296007e309a4d54d4402529a12d7b450c14d40317"
   end
 
   resource "GitPython" do
-    url "https://pypi.python.org/packages/source/G/GitPython/GitPython-1.0.2.tar.gz#md5=d92d96a8da0fc77cf141d3e16084e094"
-    sha1 "f6ff3a7dce04fac9028845ad5f0d0e1ee773d6fd"
+    url "https://pypi.python.org/packages/source/G/GitPython/GitPython-1.0.2.tar.gz"
+    sha256 "85de72556781480a38897a77de5b458ae3838b0fd589593679a1b5f34d181d84"
   end
 
   def install
